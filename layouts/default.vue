@@ -39,10 +39,10 @@
         <Nuxt />
       </v-container>
     </v-main>
-    <v-footer
+    <!-- <v-footer
       :absolute="!fixed"
       :right="right"
-      style="background-image: url(https://t3.ftcdn.net/jpg/03/00/33/66/360_F_300336600_mK1HnvRXgDqBPSN90xEBQQjA8fFf9z6l.jpg);background-size: 100% 100%;"
+      style="background-image: url(https://t3.ftcdn.net/jpg/03/00/33/66/360_F_300336600_mK1HnvRXgDqBPSN90xEBQQjA8fFf9z6l.jpg); background-size: 100% 100%;"
     >
       <v-col
       class="text-center"
@@ -50,7 +50,7 @@
     >
       <strong>{{ new Date().getFullYear() }}</strong>
     </v-col>
-    </v-footer>
+    </v-footer> -->
   </v-app>
 </template>
 

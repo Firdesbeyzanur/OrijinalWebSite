@@ -1,6 +1,14 @@
 <template>
 <div>
-<h1 class="text-center">About Me</h1>
+  <v-toolbar
+        dark
+      >
+  
+        <v-toolbar-title>About Me</v-toolbar-title>
+  
+        <v-spacer></v-spacer>
+
+      </v-toolbar>
 
 <v-timeline
     align-top
@@ -37,7 +45,7 @@ export default {
         {
           title: 'I was born on May 19, 1996 in Erzincan.',
           color: '#a6caf0',
-          icon: 'mdi-baby',
+          icon: 'mdi-baby-buggy',
         },
         {
           title: 'I completed my primary, middle and high school education in Erzincan.',
