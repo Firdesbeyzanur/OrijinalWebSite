@@ -43,15 +43,18 @@
       <br>
       </v-card>
 
-      <v-card style="color: #9FC9EB;">
+      <v-card style="color: #A56E51;">
         <h3 class="text-center">
       <br>
-      You can learn more about me by visiting my <nuxt-link to="/about">About</nuxt-link> page.
+      If you wish to reach out to me through my social media accounts, you can contact me via the following handles:
       <v-spacer></v-spacer>
-      There, I provide a brief summary about my life.
+      Instagram: @username
       <v-spacer></v-spacer>
-      Additionally, my CV is also available on my website. By clicking the button, you can review my CV and learn more about me.
+      Twitter: @username
       <v-spacer></v-spacer>
+      LinkedIn: www.linkedin.com/in/username
+      <v-spacer></v-spacer>
+      I would be happy to communicate with you through social media!
       </h3>
       <br>
       </v-card>
