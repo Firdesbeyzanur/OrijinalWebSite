@@ -1,74 +1,82 @@
 <template>
-        <v-card
+  <v-card
     class="mx-auto"
-    theme="dark"
-    title="Card title"
-    text="..."
-    variant="tonal"
-
+    max-width="1000px"
   >
-  <v-toolbar
-        dark
-      > 
-        <v-toolbar-title>Home</v-toolbar-title>
-        <v-spacer></v-spacer>
-      </v-toolbar>
-      <v-card style="color: #8FB996;">
-        <h3 class="text-center">
-      <br>
-        Hello and Welcome!
-      <v-spacer></v-spacer>
-      I am Firdes Beyzanur Şenocak, and this is my personal website. I share my project contents here.
-      <v-spacer></v-spacer>
-      Welcome to my website! I am here to share interesting topics, showcase my projects, and share my experiences with you. I hope you enjoy navigating through my site and feel free to contact me.
-      <v-spacer></v-spacer>
-      Thank you,</h3>
-      <br>
-      </v-card>
-      
-      <v-card style="color: #9FC9EB;">
-        <h3 class="text-center">
-      <br>
-      You can learn more about me by visiting my <nuxt-link to="/about">About</nuxt-link> page.
-      <v-spacer></v-spacer>
-      There, I provide a brief summary about my life.
-      <v-spacer></v-spacer>
-      If you would like to review my projects, you can visit my <n-link to="portfolio">Portfolio</n-link> page. There, I showcase some of my own projects and provide detailed information about them. 
-      <v-spacer></v-spacer>
-      Additionally, my CV is also available on my website. By clicking the button, you can review my CV and learn more about me.
-      <v-spacer></v-spacer>
-      </h3>
-      <!-- Eklenecek -->
-      <v-btn>Downland CV</v-btn>
-      <br>
-      </v-card>
+    <v-img
+      src="https://user-images.githubusercontent.com/99497565/231098768-60efb962-c429-45fb-a997-8f41b2607470.png"
+      max-height="440px"
+    >
+    <v-btn 
+      absolute
+      dark
+      bottom
+      left
+      color="#154360"
+      @click="indirPDF"
+      >
+      <v-icon> mdi-link-variant </v-icon> <a href="/firdes-beyzanur-senocak-cv.pdf" download="firdes-beyzanur-senocak.pdf">Click here for my CV</a>
+    </v-btn>
+  </v-img>
 
-      <v-card style="color: #A56E51;">
-        <h3 class="text-center">
-      <br>
-      If you wish to reach out to me through my social media accounts, you can contact me via the following handles:
+    <v-card-title>
+      Jr. Front-End Developer
+    </v-card-title>
+
+    <v-card-actions>
+      <v-btn
+        color="orange lighten-2"
+        text
+        @click="show = !show"
+      >
+      For more information, please click here
+      </v-btn>
+
       <v-spacer></v-spacer>
-      Instagram: @username
-      <v-spacer></v-spacer>
-      Twitter: @username
-      <v-spacer></v-spacer>
-      LinkedIn: www.linkedin.com/in/username
-      <v-spacer></v-spacer>
-      I would be happy to communicate with you through social media!
-      </h3>
-      <br>
-      </v-card>
+
+      <v-btn
+        icon
+        @click="show = !show"
+      >
+        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }} </v-icon>
+      </v-btn>
+    </v-card-actions>
+
+    <v-expand-transition>
+      <div v-show="show">
+        <v-divider></v-divider>
+
+        <v-card-text class="homeText">
+          Hello and Welcome!
+          <v-spacer></v-spacer>
+          I am Firdes Beyzanur Şenocak, and this is my personal website. I share my project contents here.
+          <v-spacer></v-spacer>
+          Welcome! I am Firdes Beyzanur Şenocak, and this is my personal website where I share content about my projects. I am here to share interesting topics, showcase my projects, and share my experiences with you. I hope you enjoy navigating through my site and feel free to contact me.
+          <v-spacer></v-spacer>
+          Thank you,
+          <v-spacer></v-spacer>
+          You can learn more about me by visiting my <nuxt-link to="/about">About</nuxt-link> page.
+          There, I provide a brief summary about my life.
+          <v-spacer></v-spacer>
+          If you would like to review my projects, you can visit my <n-link to="portfolio">Portfolio</n-link> page. There, I showcase some of my own projects and provide detailed information about them.
+        </v-card-text>
+      </div>
+    </v-expand-transition>
   </v-card>
-
 </template>
 
 <script>
   export default {
     data: () => ({
+      show: false,
     }),
   }
 </script>
 
-<style>
 
+<style scoped>
+.homeText {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+}
 </style>

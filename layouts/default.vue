@@ -32,7 +32,23 @@
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-toolbar-title>{{ title }}</v-toolbar-title>
-      <v-spacer />
+      <v-spacer />    
+      <v-btn icon  @click="contact('https://www.linkedin.com/in/firdesbeyzanursenocak/')">
+        <v-icon>mdi-linkedin</v-icon>
+      </v-btn>
+
+      <v-btn icon @click="contact('https://github.com/Firdesbeyzanur')">
+        <v-icon>mdi-github</v-icon>
+      </v-btn>
+      <a href="mailto:beyzanursenocak96@gmail.com">
+      <v-btn icon>
+        <v-icon>mdi-gmail</v-icon>
+      </v-btn>
+    </a>
+
+      <v-btn icon @click="contact('https://www.instagram.com/firdesbyznr/')"> 
+        <v-icon>mdi-instagram</v-icon>
+      </v-btn>
     </v-app-bar>
     <v-main>
       <v-container>
@@ -78,17 +94,17 @@ export default {
           title: 'Portfolio',
           to: '/portfolio'
         },
-        {
-          icon: 'mdi-image',
-          title: 'Home Test',
-          to: '/homeTest'
-        }
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
       title: 'Firdes Beyzanur Senocak'
     }
+  },
+  methods: {
+    contact: function (link) {
+      window.open(link, '_blank');
+    },
   }
 }
 </script>
