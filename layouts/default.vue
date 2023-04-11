@@ -77,6 +77,11 @@ export default {
           icon: 'mdi-image',
           title: 'Portfolio',
           to: '/portfolio'
+        },
+        {
+          icon: 'mdi-image',
+          title: 'Home Test',
+          to: '/homeTest'
         }
       ],
       miniVariant: false,
