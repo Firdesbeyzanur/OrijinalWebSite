@@ -15,7 +15,7 @@
       color="#154360"
       @click="indirPDF"
       >
-      <v-icon> mdi-link-variant </v-icon> <a href="/firdes-beyzanur-senocak-cv.pdf" download="firdes-beyzanur-senocak.pdf">Click here for my CV</a>
+      <v-icon> mdi-link-variant </v-icon> <a href="/firdes-beyzanur-senocak-cv.pdf" download="firdes-beyzanur-senocak.pdf" class="cvText">Click here for my CV</a>
     </v-btn>
   </v-img>
 
@@ -30,15 +30,6 @@
         @click="show = !show"
       >
       For more information, please click here
-      </v-btn>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        icon
-        @click="show = !show"
-      >
-        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }} </v-icon>
       </v-btn>
     </v-card-actions>
 
@@ -78,5 +69,10 @@
 .homeText {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: large;
+}
+.cvText {
+  text-decoration: none;
+  color: white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 </style>

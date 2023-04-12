@@ -27,7 +27,7 @@
         class="ma-3 pa-3"
 
       >
-        <v-card-title style="word-break: normal; color: white">          
+        <v-card-title style="word-break: normal; color: black">          
           {{item.title}}
         </v-card-title>
       </v-card>
@@ -44,38 +44,28 @@ export default {
       items: [
         {
           title: 'I was born on May 19, 1996 in Erzincan.',
-          color: '#222222',
+          color: '#a6caf0',
           icon: 'mdi-baby-buggy',
         },
         {
           title: 'I completed my primary, middle and high school education in Erzincan.',
-          color: '#1abc9c',
+          color: '#96d9af',
           icon: 'mdi-city',
         },
         {
           title: 'I won Balikesir University Electrical and Electronics Engineering and completed my undergraduate education in 2020 with an average of 3.04.',
-          color: '#34495e',
+          color: '#dac0de',
           icon: 'mdi-book-variant ',
         },
         {
           title: 'I continue my education life by doing my master\'s degree in Erzincan Binali Yildirim University Electrical and Electronics Engineering Department. I am at the thesis stage of my education. (My GPA is 4.00)',
-          color: '#f1c40f',
+          color: '#f8e7ad',
           icon: 'mdi-pencil',
         },
         {
-          title: 'With my interest in software and my curiosity about the production process of a game, I took part as a trainee in the 7-month bootcamp initiated by the Game and Application Academy. During the bootcamp, I received various trainings such as Unity and Project Management. As a result of the bootcamp, we designed a thriller game called Survival of Fallen with my team of 5 people, where I worked as a developer.',
-          color: '#8e44ad',
-          icon: 'mdi-gamepad',
-        },
-        {
-          title: 'Then I started the YetGen, or Competent Youth program. YetGen is a voluntary education project that takes place at universities and high schools and aims to provide students with the basic competencies they need to have in order to have a successful business life in the 21st century. Within the scope of this program, I took 21st Century competencies courses interactively with selected students like you for ten weeks.',
-          color: '#e91e63',
+          title: 'I am currently working as a Junior Front-End Developer in a software company.',
+          color: '#f4c8d4',
           icon: 'mdi-laptop',
-        },
-        {
-          title: 'Then I started a 2-month internship at MGS Software software company. During my internship, I received trainings about Vue.js. After my internship, I worked as a Jr. I continue to work as a Front-End Developer.',
-          color: '#27ae60',
-          icon: 'mdi-code-not-equal-variant',
         },
       ],
     }),

@@ -40,7 +40,7 @@
       <v-btn icon @click="contact('https://github.com/Firdesbeyzanur')">
         <v-icon>mdi-github</v-icon>
       </v-btn>
-      <a href="mailto:beyzanursenocak96@gmail.com">
+      <a href="mailto:beyzanursenocak96@gmail.com" style="text-decoration: none;">
       <v-btn icon>
         <v-icon>mdi-gmail</v-icon>
       </v-btn>
@@ -108,3 +108,4 @@ export default {
   }
 }
 </script>
+
