@@ -86,7 +86,7 @@ export default {
       { title: 'Insurance Dataset', src: 'https://miro.medium.com/v2/resize:fit:1400/0*yRhQ28Nd53cTSCR6', icon: 'mdi-clipboard-account' , link: 'https://github.com/Firdesbeyzanur/GlobalAIHub-Project' , text: 'The insurance dataset was examined at the bootcamp organized by Global AI Hub.' , flex: 4 , show: false },
       { title: 'Date Fruit Dataset', src: 'https://storage.googleapis.com/kaggle-datasets-images/2049845/3400552/7ea4cce54ee9f92170cf7e4dfcb72394/dataset-card.jpg?t=2022-04-03-09-30-05', icon: 'mdi-food-apple' , link: 'https://github.com/Firdesbeyzanur/Deep-Learning' , text: 'We created a neural network to classify dates with TensorFlow. For this, we used the "Date Fruit Dataset" available on Kaggle.' , flex: 4 , show: false },
       { title: 'Image Classification', src: 'https://miro.medium.com/v2/resize:fit:1400/0*gPfifkgrc7UIjZEA', icon: 'mdi-grid' , link: 'https://github.com/Firdesbeyzanur/CNN' , text: 'In this project, we built a convolutional neural network to solve a multi-class image classification problem.' , flex: 4 , show: false },
-      { title: 'Movie Review Dataset', src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3MP-9wP2KclatnLP7_kIfsxV6m7VeMt3mT57Hcj0g60LCVu1miG1gth5qzMWbqnFAB9M&usqp=CAU', icon: 'mdi-movie' , link: 'https://github.com/Firdesbeyzanur/Deep-Learning_2' , text: 'Recurrent neural networks. IMDB Movie Review Dataset was used.' , flex: 4 , show: false },
+      { title: 'Movie Review Dataset', src: 'https://www.karel.com.tr/sites/default/files/pictures/ik-film-onerileri-a.jpg', icon: 'mdi-movie' , link: 'https://github.com/Firdesbeyzanur/Deep-Learning_2' , text: 'Recurrent neural networks. IMDB Movie Review Dataset was used.' , flex: 4 , show: false },
     ],
   }),
   methods: {
