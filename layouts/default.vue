@@ -45,10 +45,6 @@
         <v-icon>mdi-gmail</v-icon>
       </v-btn>
     </a>
-
-      <v-btn icon @click="contact('https://www.instagram.com/firdesbyznr/')"> 
-        <v-icon>mdi-instagram</v-icon>
-      </v-btn>
     </v-app-bar>
     <v-main>
       <v-container>
