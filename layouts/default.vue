@@ -90,6 +90,11 @@ export default {
           title: 'Portfolio',
           to: '/portfolio'
         },
+        {
+          icon: 'mdi-file-document',
+          title: 'Certificates',
+          to: '/certificates'
+        },
       ],
       miniVariant: false,
       right: true,
