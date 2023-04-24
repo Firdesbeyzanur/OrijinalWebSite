@@ -13,7 +13,6 @@
       bottom
       left
       color="#154360"
-      @click="indirPDF"
       >
       <v-icon> mdi-link-variant </v-icon> <a href="/firdes-beyzanur-senocak-cv.pdf" download="firdes-beyzanur-senocak.pdf" class="cvText">Click here for my CV</a>
     </v-btn>
@@ -46,10 +45,12 @@
           <v-spacer></v-spacer>
           Thank you,
           <v-spacer></v-spacer>
-          You can learn more about me by visiting my <nuxt-link to="/about">About</nuxt-link> page.
+          You can learn more about me by visiting my <nuxt-link to="/about">About Me</nuxt-link> page.
           There, I provide a brief summary about my life.
           <v-spacer></v-spacer>
           If you would like to review my projects, you can visit my <n-link to="portfolio">Portfolio</n-link> page. There, I showcase some of my own projects and provide detailed information about them.
+          <v-spacer></v-spacer>
+          If you would like to view my certificates, you can visit my <nuxt-link to="/certificates">Certificates</nuxt-link> page. There, you can find a list and details of various certificates I have earned. This page is a useful resource for those who want to learn more about the trainings I have taken and the skills I have acquired.
         </v-card-text>
       </div>
     </v-expand-transition>

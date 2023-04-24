@@ -2,7 +2,7 @@
   <v-app dark>
     <v-navigation-drawer
       v-model="drawer"
-      src="https://cdn.create.vista.com/api/media/medium/229788058/stock-photo-smoky-grey-swirls-black-background?token="
+      src="https://coolwallpapers.me/picsup/6048934-texture-black-style-backgrounds-texture-black-background.jpg"
       :mini-variant="miniVariant"
       :clipped="clipped"
       fixed
@@ -36,10 +36,14 @@
       <v-btn icon  @click="contact('https://www.linkedin.com/in/firdesbeyzanursenocak/')">
         <v-icon>mdi-linkedin</v-icon>
       </v-btn>
-
       <v-btn icon @click="contact('https://github.com/Firdesbeyzanur')">
         <v-icon>mdi-github</v-icon>
       </v-btn>
+      <a href="https://medium.com/@FirdesBeyzanurSenocak" target="_blank" rel="noopener">
+      <v-btn icon>
+        <v-icon>fab fa-medium mx-2</v-icon>
+      </v-btn>
+      </a>
       <a href="mailto:beyzanursenocak96@gmail.com" style="text-decoration: none;">
       <v-btn icon>
         <v-icon>mdi-gmail</v-icon>
