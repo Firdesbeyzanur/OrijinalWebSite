@@ -112,7 +112,6 @@ export default {
       window.open(link, '_blank');
     },
     toggleShow(project) {
-      // Açıklamanın görünürlüğünü değiştirmek için kullanılabilir
       project.show = !project.show;
     },
     filterProjects(category) {
