@@ -99,11 +99,6 @@ export default {
           title: 'Certificates',
           to: '/certificates'
         },
-        {
-          icon: 'mdi-file-document',
-          title: 'Deneme',
-          to: '/deneme'
-        },
       ],
       miniVariant: false,
       right: true,
