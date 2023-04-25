@@ -9,11 +9,10 @@
       <v-toolbar-title>Certificates</v-toolbar-title>
 
       <v-spacer></v-spacer>
-
-    <v-menu offset-y>
+      <v-menu offset-y>
     <template #activator="{ on }">
       <v-btn v-on="on">
-        Categories
+        Kategoriler
       </v-btn>
     </template>
 
