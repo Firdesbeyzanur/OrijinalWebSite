@@ -13,6 +13,7 @@
       bottom
       left
       color="#154360"
+      class="cvButton"
       >
       <v-icon> mdi-link-variant </v-icon> <a href="/firdes-beyzanur-senocak-cv.pdf" download="firdes-beyzanur-senocak.pdf" class="cvText">Click here for my CV</a>
     </v-btn>
@@ -75,5 +76,12 @@
   text-decoration: none;
   color: white;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cvButton {
+  transition: all 0.2s ease-in-out;
+}
+
+.cvButton:hover {
+  transform: scale(1.1);
 }
 </style>
