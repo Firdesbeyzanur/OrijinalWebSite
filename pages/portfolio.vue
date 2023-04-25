@@ -14,8 +14,11 @@
         <v-btn 
           v-for="category in categories" :key="category"   
           @click="filterProjects(category)"
+          color="blue-grey"
+          class="my-btn"
+          rounded
           >
-            {{ category }}
+          {{ category }} 
         </v-btn>
 
       </v-toolbar>
@@ -120,3 +123,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.my-btn {
+  margin-right: 8px;
+}
+</style>

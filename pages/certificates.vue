@@ -12,7 +12,10 @@
 
     <v-menu offset-y>
     <template #activator="{ on }">
-      <v-btn v-on="on">
+      <v-btn v-on="on"
+      color="blue-grey"
+      rounded
+      >
         Categories
       </v-btn>
     </template>
