@@ -33,6 +33,7 @@
           dark
           v-bind="attrs"
           v-on="on"
+          class=" homebutton"
         >
           For more information, please click here
         </v-btn>
@@ -90,6 +91,28 @@
 .homeText {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: large;
+}
+.homebutton {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  position: relative;
+  transition: left 0.3s ease;
+}
+
+.homebutton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+
+.homebutton:hover {
+  left: 10px;
 }
 .cvText {
   text-decoration: none;

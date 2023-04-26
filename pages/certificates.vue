@@ -127,3 +127,15 @@ methods: {
 }
 }
 </script>
+
+<style scoped>
+button {
+  color: #fff;
+  padding: 10px 20px;
+  transition: opacity 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+</style>

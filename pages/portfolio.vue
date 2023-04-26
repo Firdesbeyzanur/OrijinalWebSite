@@ -42,8 +42,8 @@
 
               <v-card-actions>
                 <v-btn>
-              <h4 class="text-align: start; text-size: 15px" @click="goPage(project.link)"><v-icon> mdi-link-variant </v-icon> {{ project.title }} </h4>
-                </v-btn>
+              <h4 class="text-align: start; text-size: 15px button" @click="goPage(project.link)"><v-icon> mdi-link-variant </v-icon> {{ project.title }} </h4>
+                </v-btn> 
                 <v-btn icon>
                   <v-icon 
                   @click="toggleShow(project)">{{ project.icon }}</v-icon>
@@ -134,5 +134,24 @@ export default {
 <style scoped>
 .my-btn {
   margin-right: 8px;
+  transition: all 0.2s ease-in-out;
+
 }
+.my-btn:hover {
+  transform: scale(1.1);
+}
+.button {
+  margin-right: 8px;
+}
+.button {
+  margin-right: 8px;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.button:hover {
+  transform: rotate(360deg);
+}
+
+
 </style>
