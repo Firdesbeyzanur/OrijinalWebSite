@@ -40,7 +40,7 @@
       </template>
 
       <v-card>
-        <v-card-title class="text-h5" style="background-color:  #4B86B4;">
+        <v-card-title  style="background-color:  #4B86B4;">
           Information
         </v-card-title>
       <v-divider></v-divider>
@@ -91,13 +91,20 @@
 .homeText {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: large;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .homebutton {
   background-color: #000;
   color: #fff;
-  padding: 10px 20px;
   position: relative;
   transition: left 0.3s ease;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .homebutton::before {
