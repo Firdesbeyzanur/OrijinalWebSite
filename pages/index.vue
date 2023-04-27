@@ -35,7 +35,7 @@
           v-on="on"
           class=" homebutton"
         >
-          For more information, please click here
+        More Details
         </v-btn>
       </template>
 
