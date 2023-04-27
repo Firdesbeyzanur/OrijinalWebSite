@@ -1,68 +1,45 @@
 <template>
-  <v-card
-    class="mx-auto"
-  >
-
-    <v-toolbar
-      dark
-    >
+  <v-card class="mx-auto">
+    <v-toolbar dark>
       <v-toolbar-title>Certificates</v-toolbar-title>
-
       <v-spacer></v-spacer>
-
-    <v-menu offset-y>
-    <template #activator="{ on }">
-      <v-btn v-on="on"
-      color="blue-grey"
-      rounded
-      >
-        Categories
-      </v-btn>
-    </template>
-
-    <v-list>
-      <v-list-item v-for="(category, index) in categories" :key="index" @click="filterCertificates(category)">
-        <v-list-item-title>
-          {{ category }}
-        </v-list-item-title>
-      </v-list-item>
-    </v-list>
-  </v-menu>
-
+      <v-menu offset-y>
+        <template #activator="{ on }">
+          <v-btn v-on="on" color="blue-grey" rounded>
+            Categories
+          </v-btn>
+        </template>
+        <v-list>
+          <v-list-item v-for="(category, index) in categories" :key="index" @click="filterCertificates(category)">
+            <v-list-item-title>
+              {{ category }}
+            </v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
     </v-toolbar>
     <v-spacer></v-spacer>
     <v-container fluid>
       <v-row dense>
-        <v-col
-          v-for="certificate in filteredCertificates" :key="certificate.id"
-          :title="certificate.title"
-          :cols="certificate.flex"
-          :icon="certificate.icon"
-        >
+        <v-col v-for="certificate in filteredCertificates" :key="certificate.id" :title="certificate.title" :cols="certificate.flex" :icon="certificate.icon">
           <v-card>
-            <v-img
-              :src="certificate.src"
-              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-              height="420px"
-              >
-            </v-img>
-            <v-card-actions>
-              <v-btn>
-                <h4 class="text-align: start; text-size: 15px" @click="goCertificates(certificate.link)"><v-icon> mdi-link-variant </v-icon> {{ certificate.title }} </h4>
+            <v-img :src="certificate.src" gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)" height="420px"></v-img>
+            <v-card-actions class="d-flex justify-space-between">
+              <v-btn class="mb-2" color="primary" @click="goCertificates(certificate.link)">
+                <v-icon left>mdi-link-variant</v-icon> {{ certificate.title }}
               </v-btn>
-              <v-btn icon>
-                  <v-icon 
-                  @click="toggleShow(certificate)">{{ certificate.icon }}</v-icon>
-                </v-btn>
-              </v-card-actions>
-              <v-expand-transition>
-                <div v-show="certificate.show">
-                  <v-divider></v-divider>
-                  <v-card-text>
-                    {{ certificate.text }}
-                  </v-card-text>
-               </div>
-              </v-expand-transition>
+              <v-btn icon class="mb-2" @click="toggleShow(certificate)">
+                <v-icon>{{ certificate.icon }}</v-icon>
+              </v-btn>
+            </v-card-actions>
+            <v-expand-transition>
+              <div v-show="certificate.show">
+                <v-divider></v-divider>
+                <v-card-text>
+                  {{ certificate.text }}
+                </v-card-text>
+              </div>
+            </v-expand-transition>
           </v-card>
         </v-col>
       </v-row>
