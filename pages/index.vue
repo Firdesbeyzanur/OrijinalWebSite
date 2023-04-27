@@ -1,23 +1,23 @@
 <template>
   <v-card
     class="mx-auto"
-    width="100%"
+    max-width="1000px"
   >
     <v-img
       src="https://user-images.githubusercontent.com/99497565/234297195-aa84f3a5-dca5-46e5-ae2a-75218c88ea5b.png"
-      height="440px"
+      max-height="440px"
     >
-      <v-btn 
-        absolute
-        dark
-        bottom
-        left
-        color="#154360"
-        class="cvButton"
-        >
-        <v-icon> mdi-link-variant </v-icon> <a href="/firdes-beyzanur-senocak-cv.pdf" download="firdes-beyzanur-senocak.pdf" class="cvText">Click here for my CV</a>
-      </v-btn>
-    </v-img>
+    <v-btn 
+      absolute
+      dark
+      bottom
+      left
+      color="#154360"
+      class="cvButton"
+      >
+      <v-icon> mdi-link-variant </v-icon> <a href="/firdes-beyzanur-senocak-cv.pdf" download="firdes-beyzanur-senocak.pdf" class="cvText">Click here for my CV</a>
+    </v-btn>
+  </v-img>
 
     <v-card-title>
       Jr. Front-End Developer
@@ -35,7 +35,7 @@
           v-on="on"
           class=" homebutton"
         >
-        More Details
+          More Details
         </v-btn>
       </template>
 
@@ -88,42 +88,42 @@
 
 
 <style scoped>
-  .homeText {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: large;
-    padding: 10px;
-  }
-  .homebutton {
-    max-width: 100%;
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
-    position: relative;
-    transition: left 0.3s ease;
-  }
-  .homebutton::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.2);
-    z-index: -1;
-  }
-  .homebutton:hover {
-    left: 0;
-  }
-  .cvText {
-    text-decoration: none;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  .cvButton {
-    transition: all 0.2s ease-in-out;
-  }
-  .cvButton:hover {
-    transform: scale(1.1);
-  }
-</style>
+.homeText {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+}
+.homebutton {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  position: relative;
+  transition: left 0.3s ease;
+}
 
+.homebutton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+
+.homebutton:hover {
+  left: 10px;
+}
+.cvText {
+  text-decoration: none;
+  color: white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cvButton {
+  transition: all 0.2s ease-in-out;
+}
+
+.cvButton:hover {
+  transform: scale(1.1);
+}
+</style>
