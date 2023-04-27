@@ -125,16 +125,5 @@
   .cvButton:hover {
     transform: scale(1.1);
   }
-
-  /* Medya sorgusu ekle */
-  @media screen and (max-width: 600px) {
-    .homeText {
-      font-size: medium;
-      padding: 5px;
-    }
-    .homebutton {
-      padding: 5px;
-    }
-  }
 </style>
 
