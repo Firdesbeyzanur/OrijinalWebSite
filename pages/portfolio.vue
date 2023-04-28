@@ -11,15 +11,24 @@
 
         <v-spacer></v-spacer>
         
-        <v-btn 
-          v-for="category in categories" :key="category"   
-          @click="filterProjects(category)"
-          color="blue-grey"
-          class="my-btn"
-          rounded
-          >
-          {{ category }} 
-        </v-btn>
+        <v-menu offset-y>
+    <template #activator="{ on }">
+      <v-btn v-on="on"
+      color="blue-grey"
+      rounded
+      >
+        Categories
+      </v-btn>
+    </template>
+
+    <v-list>
+      <v-list-item v-for="(category, index) in categories" :key="index" @click="filterProjects(category)">
+        <v-list-item-title>
+          {{ category }}
+        </v-list-item-title>
+      </v-list-item>
+    </v-list>
+  </v-menu>
 
       </v-toolbar>
       <v-spacer></v-spacer>
@@ -40,9 +49,9 @@
               </v-img>
   
 
-              <v-card-actions>
-                <v-btn>
-              <h4 class="text-align: start; text-size: 15px button" @click="goPage(project.link)"><v-icon> mdi-link-variant </v-icon> {{ project.title }} </h4>
+              <v-card-actions class="d-flex justify-right">
+                <v-btn small>
+              <h4 class=" button" @click="goPage(project.link)"><v-icon> mdi-link-variant </v-icon> {{ project.title }} </h4>
                 </v-btn> 
                 <v-btn icon>
                   <v-icon 
@@ -92,13 +101,12 @@ export default {
       { title: 'Stock Dataset', src: 'https://caltech-prod.s3.amazonaws.com/main/images/CollinCamerer-ShortSelling-0.2e16d0ba.fill-1600x810-c100.jpg', icon: 'mdi-cash' , link: 'https://github.com/Firdesbeyzanur/StockDataset' , text: 'Time Series, Regression and LSTM analysis were performed on the stock market data set and ARIMA model was applied.' , flex: 4 , show: false, categories: ['Python', 'All'] },
       { title: 'Forecast Process', src: 'https://www.bounteous.com/sites/default/files/styles/file_entity_browser_thumbnail/public/insights/2020-09/previews/20200902_blog_-forecasting-with-time-series-models-using-python_pt2_website.png?itok=ausSadlv', icon: 'mdi-account-convert' , link: 'https://github.com/Firdesbeyzanur/Tahminleme-Islemi' , text: 'Python code that predicts the age, race and gender of people after various operations.' , flex: 4 , show: false, categories: ['Python', 'All'] },
       { title: 'Face Matching', src: 'https://img.freepik.com/premium-vector/woman-s-face-recognition-concept-biometric-face-scanning-futuristic-security-personal-verification-monitor-cyber-protection-concept_212168-585.jpg?w=2000', icon: 'mdi-account-circle' , link: 'https://github.com/Firdesbeyzanur/Yuz-Eslestirme' , text: 'Face matching of the people in the database was done using MATLAB.' , flex: 4 , show: false, categories: ['MATLAB', 'All'] },
-      { title: 'Prediction-Classification', src: 'https://media.istockphoto.com/id/1195209543/vector/facial-recognition-system-with-woman-face-flat-vector-illustration-isolated.jpg?s=612x612&w=0&k=20&c=SzxSs3gXdLQAVlt67oNRW1uw9V3T6-e6EokxZN-jSWk=', icon: 'mdi-account-multiple' , link: 'https://github.com/Firdesbeyzanur/Prediction-Classification' , text: 'A program that predicts people\'s age, gender and ethnicity with Python' , flex: 4 , show: false, categories: ['Python', 'All'] },
-      { title: 'Mushroom Classification', src: 'https://i.ytimg.com/vi/tQZyurzh5Ms/maxresdefault.jpg', icon: 'mdi-mushroom' , link: 'https://github.com/Firdesbeyzanur/Mushroom-classification' , text: 'In this project, we will use the "Mushroom Classification" dataset, a public dataset from kaggle.com, and try to figure out whether a mushroom is edible or not.' , flex: 4 , show: false, categories: ['Python', 'All'] },
+      { title: 'Prediction', src: 'https://media.istockphoto.com/id/1195209543/vector/facial-recognition-system-with-woman-face-flat-vector-illustration-isolated.jpg?s=612x612&w=0&k=20&c=SzxSs3gXdLQAVlt67oNRW1uw9V3T6-e6EokxZN-jSWk=', icon: 'mdi-account-multiple' , link: 'https://github.com/Firdesbeyzanur/Prediction-Classification' , text: 'A program that predicts people\'s age, gender and ethnicity with Python' , flex: 4 , show: false, categories: ['Python', 'All'] },
+      { title: 'Mushroom Class', src: 'https://i.ytimg.com/vi/tQZyurzh5Ms/maxresdefault.jpg', icon: 'mdi-mushroom' , link: 'https://github.com/Firdesbeyzanur/Mushroom-classification' , text: 'In this project, we will use the "Mushroom Classification" dataset, a public dataset from kaggle.com, and try to figure out whether a mushroom is edible or not.' , flex: 4 , show: false, categories: ['Python', 'All'] },
       { title: 'Insurance Dataset', src: 'https://miro.medium.com/v2/resize:fit:1400/0*yRhQ28Nd53cTSCR6', icon: 'mdi-clipboard-account' , link: 'https://github.com/Firdesbeyzanur/GlobalAIHub-Project' , text: 'The insurance dataset was examined at the bootcamp organized by Global AI Hub.' , flex: 4 , show: false, categories: ['Python', 'All']},
       { title: 'Date Fruit Dataset', src: 'https://storage.googleapis.com/kaggle-datasets-images/2049845/3400552/7ea4cce54ee9f92170cf7e4dfcb72394/dataset-card.jpg?t=2022-04-03-09-30-05', icon: 'mdi-food-apple' , link: 'https://github.com/Firdesbeyzanur/Deep-Learning' , text: 'We created a neural network to classify dates with TensorFlow. For this, we used the "Date Fruit Dataset" available on Kaggle.' , flex: 4 , show: false, categories: ['Python', 'All'] },
       { title: 'Image Classification', src: 'https://miro.medium.com/v2/resize:fit:1400/0*gPfifkgrc7UIjZEA', icon: 'mdi-grid' , link: 'https://github.com/Firdesbeyzanur/CNN' , text: 'In this project, we built a convolutional neural network to solve a multi-class image classification problem.' , flex: 4 , show: false, categories: ['Python', 'All'] },
       { title: 'Movie Review Dataset', src: 'https://www.karel.com.tr/sites/default/files/pictures/ik-film-onerileri-a.jpg', icon: 'mdi-movie' , link: 'https://github.com/Firdesbeyzanur/Deep-Learning_2' , text: 'Recurrent neural networks. IMDB Movie Review Dataset was used.' , flex: 4 , show: false, categories: ['Python', 'All']},
-      { title: 'Image Classification', src: 'https://miro.medium.com/v2/resize:fit:1400/0*gPfifkgrc7UIjZEA', icon: 'mdi-grid' , link: 'https://github.com/Firdesbeyzanur/CNN' , text: 'In this project, we built a convolutional neural network to solve a multi-class image classification problem.' , flex: 4 , show: false, categories: ['Python', 'All'] },
       { title: 'Lena512 Puzzle', src: 'https://images.wallpaperscraft.com/image/single/puzzles_puzzle_part_106469_2780x2780.jpg', icon: 'mdi-puzzle' , link: 'https://github.com/Firdesbeyzanur/Lena512Disassembly' , text: 'Lena512 image split into 4 parts with MATLAB.' , flex: 4 , show: false, categories: ['MATLAB', 'All']},
       { title: 'Lena512 Frame', src: 'https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v695-taus-20-abstractgradientbackground2_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=42cdcbcbb4eb13ce76b92984d6f53da7', icon: 'mdi-image-filter-frames' , link: 'https://github.com/Firdesbeyzanur/Lena512Frame' , text: 'We have the Lena512 picture in a black frame.' , flex: 4 , show: false, categories: ['MATLAB', 'All']},
       { title: 'Lena512 Round Frame', src: 'https://img.freepik.com/premium-vector/silver-glitter-frame-circle-frame-with-shiny-sparkles-dark-transparent-background-vector-illustration_515038-5322.jpg?w=2000', icon: 'mdi-checkbox-blank-circle' , link: 'https://github.com/Firdesbeyzanur/Lena512RoundFrame' , text: 'We have enclosed the Lena512 picture in a black round frame.' , flex: 4 , show: false, categories: ['MATLAB', 'All']},
