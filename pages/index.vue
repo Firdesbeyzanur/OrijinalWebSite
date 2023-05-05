@@ -3,11 +3,16 @@
     class="mx-auto"
     max-width="1000px"
   >
-    <v-img
-      src="https://user-images.githubusercontent.com/99497565/234297195-aa84f3a5-dca5-46e5-ae2a-75218c88ea5b.png"
-      max-height="440px"
-    >
-    <v-btn 
+  
+  <nuxt-img
+    :src="require('@/assets/images/firdes-beyzanur-senocak.png')"
+    formats="webp"
+    alt='Firdes Beyzanur Senocak'
+    class="img"
+    loading="lazy"
+  >
+  </nuxt-img>
+  <v-btn 
       absolute
       dark
       bottom
@@ -17,8 +22,6 @@
       >
       <v-icon> mdi-link-variant </v-icon> <a href="/firdes-beyzanur-senocak-cv.pdf" download="firdes-beyzanur-senocak.pdf" class="cvText">Click here for my CV</a>
     </v-btn>
-  </v-img>
-
     <v-card-title>
       Jr. Front-End Developer
     </v-card-title>
@@ -29,7 +32,7 @@
     >
       <template v-slot:activator="{ on, attrs }">
         <v-btn
-          color="#FF8C42"
+          color="#89461F"
           dark
           v-bind="attrs"
           v-on="on"
@@ -121,9 +124,12 @@
 }
 .cvButton {
   transition: all 0.2s ease-in-out;
+  position: static;
 }
 
-.cvButton:hover {
-  transform: scale(1.1);
+.img {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover;
 }
 </style>

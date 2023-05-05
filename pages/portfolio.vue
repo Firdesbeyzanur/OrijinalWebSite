@@ -14,8 +14,9 @@
         <v-menu offset-y>
     <template #activator="{ on }">
       <v-btn v-on="on"
-      color="blue-grey"
+      color="#055D8F"
       rounded
+      aria-label="Categories"
       >
         Categories
       </v-btn>
@@ -50,10 +51,10 @@
               </v-img>
   
               <v-card-actions>
-                <v-btn>
+                <v-btn :aria-label="project.title">
               <h6 @click="goPage(project.link)"><v-icon> mdi-link-variant </v-icon> {{ project.title }} </h6>
                 </v-btn> 
-                <v-btn icon>
+                <v-btn icon :aria-label="project.title">
                   <v-icon 
                   @click="toggleShow(project)">{{ project.icon }}</v-icon>
                 </v-btn>
@@ -139,14 +140,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-  .button {
-  width: auto;
-  padding: 10px 20px;
-  float: left;
-
-}
-
-
-</style>

@@ -13,8 +13,9 @@
     <v-menu offset-y>
     <template #activator="{ on }">
       <v-btn v-on="on"
-      color="blue-grey"
+      color="#055D8F"
       rounded
+      aria-label="Categories"
       >
         Categories
       </v-btn>
@@ -40,17 +41,18 @@
           cols="12"
           md="4"
         >
-          <v-card>
+          <v-card 
+          >
             <v-img
               :src="certificate.src"
               height="420px"
               >
             </v-img>
             <v-card-actions>
-              <v-btn class="button">
+              <v-btn :aria-label="certificate.title">
                 <h6 @click="goCertificates(certificate.link)">{{ certificate.title }} </h6>
               </v-btn>
-              <v-btn icon>
+              <v-btn icon :aria-label="certificate.title">
                 <v-icon 
                   @click="toggleShow(certificate)">{{ certificate.icon }}
                 </v-icon>
@@ -129,11 +131,3 @@ methods: {
 }
 }
 </script>
-
-<style scoped>
-.button {
-  width: auto;
-  padding: 10px 20px;
-  float: left;
-}
-</style>

@@ -30,22 +30,22 @@
       fixed
       app
     >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+      <v-app-bar-nav-icon aria-label="Menu" @click.stop="drawer = !drawer" />
       <v-toolbar-title>{{ title }}</v-toolbar-title>
       <v-spacer />    
-      <v-btn icon  @click="contact('https://www.linkedin.com/in/firdesbeyzanursenocak/')">
+      <v-btn aria-label="Linkedin" icon  @click="contact('https://www.linkedin.com/in/firdesbeyzanursenocak/')">
         <v-icon>mdi-linkedin</v-icon>
       </v-btn>
-      <v-btn icon @click="contact('https://github.com/Firdesbeyzanur')">
+      <v-btn aria-label="GitHub" icon @click="contact('https://github.com/Firdesbeyzanur')">
         <v-icon>mdi-github</v-icon>
       </v-btn>
       <a href="https://medium.com/@FirdesBeyzanurSenocak" target="_blank" rel="noopener">
-      <v-btn icon>
+      <v-btn aria-label="Medium" icon>
         <v-icon>fab fa-medium mx-2</v-icon>
       </v-btn>
       </a>
       <a href="mailto:beyzanursenocak96@gmail.com" style="text-decoration: none;">
-      <v-btn icon>
+      <v-btn aria-label="Gmail" icon>
         <v-icon>mdi-gmail</v-icon>
       </v-btn>
     </a>
