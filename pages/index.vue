@@ -5,7 +5,7 @@
   >
   
   <nuxt-img
-    :src="require('@/assets/images/firdes-beyzanur-senocak.png')"
+    :src="require('@/assets/images/firdes-beyzanur-senocak.jpeg')"
     formats="webp"
     alt='Firdes Beyzanur Senocak'
     class="img"
