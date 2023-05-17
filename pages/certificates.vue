@@ -48,14 +48,9 @@
           :alt="certificate.title"
           class="img"
           formats="webp"
+          preload
           loading="lazy"
-          :width="800"
-          :height="600"
-          :sizes="[
-            '(max-width: 640px) 100vw',
-            '(max-width: 768px) 50vw',
-            '33vw'
-          ]"
+          sizes="sm:100vw md:50vw lg:400px"
           layout="responsive"
         ></nuxt-img>
         <v-card-actions>
