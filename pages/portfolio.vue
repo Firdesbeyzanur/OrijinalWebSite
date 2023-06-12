@@ -90,6 +90,8 @@ export default {
       { title: 'CarTrader', src: 'CarTrader.webp', icon: 'mdi-car' , link: 'https://github.com/Firdesbeyzanur/CarTrader' , text: 'It\'s an app for buying a car. More useful with filtering feature.' , flex: 4 , show: false, categories: ['Vue.js', 'All'] },
       { title: 'Find the Hulk', src: 'Hulk.webp', icon: 'mdi-cat' , link: 'https://github.com/Firdesbeyzanur/Hulku-Bul' , text: 'It\'s a sticky memory game for my cat. Guess what\'s on the face-down card.' , flex: 4 , show: false, categories: ['Vue.js', 'All']  },
       { title: 'Website', src: 'MiniWebSite.webp', icon: 'mdi-ghost' , link: 'https://github.com/Firdesbeyzanur/Nuxtjs-WebSite' , text: 'My first mini website I made using Nuxt.' , flex: 4 , show: false, categories: ['Nuxt.js', 'All'] },
+      { title: 'Website - 2', src: 'ResponsiveWebsite.webp', icon: 'mdi-responsive' , link: 'https://github.com/Firdesbeyzanur/ResponsiveWebsite' , text: 'Responsive site created with only HTML and CSS.' , flex: 4 , show: false, categories: ['HTML', 'All'] },
+      { title: 'Website - 3', src: 'ResponsiveWebsite-2.webp', icon: 'mdi-laptop' , link: 'https://github.com/Firdesbeyzanur/ResponsiveWebsite-2' , text: 'Responsive site created with only HTML and CSS.' , flex: 4 , show: false, categories: ['HTML', 'All'] },
       { title: 'Unity Game', src: 'Unity.webp', icon: 'mdi-gamepad-variant' , link: 'https://github.com/Firdesbeyzanur/Survival-of-The-Fallen' , text: 'It is a thriller game that we developed with my team of 5 people, which I worked as a developer during the Oyun ve Uygulama Akademisi bootcamp process.' , flex: 4 , show: false, categories: ['Unity', 'All'] },
       { title: 'My Application', src: 'Application.webp', icon: 'mdi-airballoon' , link: 'https://github.com/Firdesbeyzanur/Vue3-Pictures' , text: 'An app to upload and delete photos.' , flex: 4 , show: false, categories: ['Vue.js', 'All'] },
       { title: 'Note Application', src: 'NoteApplication.webp', icon: 'mdi-clipboard-check' , link: 'https://github.com/Firdesbeyzanur/FireBase-NotesApp' , text: 'Do you forget things to do during the day? Then this note app is for you.' , flex: 4 , show: false, categories: ['Vue.js', 'All'] },
@@ -119,7 +121,7 @@ export default {
       { title: 'Xray Image', src: 'X-Ray.webp', icon: 'mdi-hospital' , link: 'https://github.com/Firdesbeyzanur/XrayImageLesion' , text: 'The negative of the xray image was taken, the lesion was circled, spanned in the gray level range of 0.5-0.75, and the negative and gray level range were combined. ' , flex: 4 , show: false, categories: ['MATLAB', 'All']},
       { title: 'Histogram', src: 'Histogram.webp', icon: 'mdi-chart-histogram' , link: 'https://github.com/Firdesbeyzanur/Histogram' , text: 'We got the input and output histogram images of the image. ' , flex: 4 , show: false, categories: ['MATLAB', 'All']},
     ],
-    categories: [ 'All', 'Unity', 'Python', 'Vue.js', 'Nuxt.js', 'MATLAB' ],
+    categories: [ 'All', 'HTML', 'Vue.js', 'Nuxt.js','Unity', 'Python', 'MATLAB'],
     selectedCategory: null
   }),
   computed: {
