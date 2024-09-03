@@ -1,3 +1,5 @@
+LIVE Link: https://orijinal-web-site.netlify.app/
+
 # nuxt2website
 
 ## Build Setup
